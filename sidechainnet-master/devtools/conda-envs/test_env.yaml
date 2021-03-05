@@ -1,0 +1,21 @@
+name: test
+channels:
+  - pytorch
+dependencies:
+    # Base depends
+  - python
+  - pip
+  - numpy
+  - scipy
+  - tqdm
+  - pytorch
+
+    # Testing
+  - pytest
+  - pytest-cov
+
+  # Pip-only installs
+  - pip:
+    - codecov
+    - ProDy
+
